@@ -8,25 +8,36 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:padding="20dp">
-        <Button
-            android:id="@+id/button_connect"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onConnectClick"
-            android:text="Connect"/>
+            android:src="@drawable/logo1"
+            android:scaleType="fitXY"
+            />
     </LinearLayout>
+
+    <Button
+        android:background="@color/red"
+        android:textColor="@color/white"
+        android:id="@+id/button_connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onConnectClick"
+        android:text="Connect"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
+        android:layout_weight="2"
         android:padding="16dp"
         tools:context="com.tutsplus.matt.bluetoothscanner.ControlActivity">
 
         <!--UP -->
         <Button
+            android:background="@color/blue"
+            android:textColor="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="UP"
@@ -35,6 +46,8 @@
 
         <!-- UP LEFT -->
         <Button
+            android:background="@color/blue"
+            android:textColor="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Left UP"
@@ -45,6 +58,8 @@
 
         <!-- UP RIGHT -->
         <Button
+            android:background="@color/blue"
+            android:textColor="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Right UP"
@@ -56,6 +71,8 @@
         <!--DOWN -->
 
         <Button
+            android:background="@color/blue"
+            android:textColor="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="DOWN"
@@ -64,20 +81,24 @@
             android:layout_alignParentBottom="true" />
 
         <Button
+            android:background="@color/blue"
+            android:textColor="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="DOWN LEFT"
+            android:text="LEFT DOWN"
             android:id="@+id/button_left_down"
             android:layout_centerVertical="true"
             android:layout_toStartOf="@id/button_down"
             android:layout_toLeftOf="@id/button_down" />
 
         <Button
+            android:background="@color/blue"
+            android:textColor="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="DOWN RIGHT"
+            android:text="RIGHT DOWN "
             android:layout_centerVertical="true"
-            android:layout_alignParentRight="true"
+
             android:id="@+id/button_right_down"
             android:layout_toEndOf="@id/button_down"
             android:layout_toRightOf="@id/button_down" />

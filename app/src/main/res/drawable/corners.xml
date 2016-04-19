@@ -5,7 +5,7 @@
 
     <!-- view background color -->
     <solid
-        android:color="#80303030" >
+        android:color="@color/blue" >
     </solid>
 
     <!-- If you want to add some padding -->
